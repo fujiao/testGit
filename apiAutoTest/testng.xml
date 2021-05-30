@@ -4,7 +4,7 @@
 <suite name="First suite" verbose="1" >
     <test name = "doGet" >
         <classes>
-            <class name="com.lemon.java.apiAuto.testCase.TestMethodCase_V1"></class>
+            <class name="com.lemon.java.apiAuto.testCase.TestMethodCase_V6"></class>
    </classes>
 </test>
 </suite>

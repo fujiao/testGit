@@ -23,7 +23,7 @@ import java.util.Set;
  */
 public class HttpUtil {
 
-    public static void doGet(String url, Map<String, String> params) {
+    public static String doGet(String url, Map<String, String> params) {
         Set<String> keys = params.keySet();
         int mark = 0;
         for (String key : keys) {
@@ -37,17 +37,27 @@ public class HttpUtil {
         }
         HttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(url);
-        String result = "";
+        String entityResult = "";
         try {
             HttpResponse httpResponse = httpClient.execute(httpGet);
             int statusCode = httpResponse.getStatusLine().getStatusCode();
             System.out.println("statusCode:" + statusCode);
             HttpEntity entity = httpResponse.getEntity();
-            result = EntityUtils.toString(entity);
-            System.out.println("result" + result);
+            entityResult = EntityUtils.toString(entity);
+            System.out.println("result" + entityResult);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return entityResult;
 
+
+    }
+
+    public static String doService(String url,String type,Map<String,String> params){
+        String result="";
+        if ("get".equalsIgnoreCase(type)){
+            result=doGet(url,params);
+        }
+        return result;
     }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="First suite" duration-ms="1241" started-at="2021-05-30T08:37:07Z" finished-at="2021-05-30T08:37:08Z">
+    <groups>
+    </groups>
+    <test name="doGet" duration-ms="1241" started-at="2021-05-30T08:37:07Z" finished-at="2021-05-30T08:37:08Z">
+      <class name="com.lemon.java.apiAuto.testCase.TestMethodCase_V1">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.lemon.java.apiAuto.testCase.TestMethodCase_V1@7d417077]" name="test1" duration-ms="1190" started-at="2021-05-30T08:37:07Z" finished-at="2021-05-30T08:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.lemon.java.apiAuto.testCase.TestMethodCase_V1 -->
+    </test> <!-- doGet -->
+  </suite> <!-- First suite -->
+</testng-results>

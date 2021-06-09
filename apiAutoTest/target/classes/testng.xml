@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="First suite" verbose="1" >
+    <test name = "ApiIdEqualsOne" >
+        <classes>
+            <class name="com.lemon.java.apiAuto.testCase.TestApiIdEqualsOne"></class>
+        </classes>
+    </test>
+    <test name = "ApiIdEqualsTwo" >
+        <classes>
+            <class name="com.lemon.java.apiAuto.testCase.TestApiIdEqualsTwo"></class>
+        </classes>
+    </test>
+</suite>
